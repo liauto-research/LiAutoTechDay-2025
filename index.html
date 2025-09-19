@@ -799,10 +799,10 @@
       1: 2500,  // 摘要页8秒
       2: 3000,  // 框架图5秒
       3: 2000,  // 结果页5秒
-      4: 7000,  // 视频演示页7秒
-      5: 7000,
-      6: 7000,
-      7: 7000,
+      4: 10000,  // 视频演示页7秒
+      5: 10000,
+      6: 10000,
+      7: 13000,
       8: 1000,  
       9: 1500   
     };
@@ -1006,5 +1006,12 @@
       }, 100);
     });
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".video-grid video").forEach(video => {
+      video.playbackRate = 2.8; // 设置倍速
+    });
+  });
+</script>
 </body>
 </html>
